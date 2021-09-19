@@ -1,13 +1,13 @@
 var fixedRect, movingRect, edge;
 
 function setup() {
-  createCanvas(1200, 1200);
-  fixedRect = createSprite(400, 200, 50, 50);
+  createCanvas(displayWidth, displayHeight);
+  fixedRect = createSprite(100, displayHeight/2, 200, displayHeight);
   fixedRect.shapeColor = "green"
   movingRect = createSprite(600, 200, 30, 30)
   movingRect.shapeColor = "blue"
   movingRect.velocityX = 4
-  edge = createSprite(1200, 0, 200, 1200)
+  edge = createSprite(displayWidth - 100, displayHeight/2, 200, displayHeight)
   edge.shapeColor = "green"
 }
 
